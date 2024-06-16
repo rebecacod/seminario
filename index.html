@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ <style>
+    body{
+        *{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+  
+    background-color: blue;
+    color: white;
+}
+ h1{
+    background-color: rgb(0, 0, 0);
+    min-height: 100px;
+    text-align: center;
+    padding-top: 30px;
+}
+nav {
+    background-color: rgba(0, 0, 0, 0.818);
+    padding: 10px;
+}
+nav > a {
+    color: white;
+    
+    padding: 10px;
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgb(25, 21, 140);
+
+}
+h3{
+    background-image: linear-gradient(to left, rgb(29, 29, 135), rgba(32, 32, 106, 0.184));
+    margin: 20px;
+    
+}
+section{
+    max-width: 1400px;
+    background-color: white;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+}
+    }
+ </style>
+<body>
+    <article>
+       
+            <h1>Estrutura de repetição <br> (Laço)</h1>
+            <nav>
+                <a href="js/index.js" target="_blank">exemplo</a>
+                <a href="https://youtu.be/5rZqYPKIwkY?si=v4AaoUIOsjFFiWuc" target="_blank">referencias</a>
+            </nav>
+      
+
+        <section>
+            <h3>Laço</h3>
+            <p>Os laços (ou loops) em programação são estruturas fundamentais que permitem a execução repetida de um bloco de código enquanto uma condição específica é verdadeira. No JavaScript, existem vários tipos de laços, cada um adequado para diferentes situações. Vamos explorar os principais tipos de laços disponíveis em JavaScript: for, while, do...while, e os mais modernos for...of e for...in.</p>
+            <h3>1. Laço for</h3>
+            <p>O laço for é provavelmente o mais conhecido e amplamente utilizado. Ele é ideal quando se sabe antecipadamente quantas vezes se deseja repetir um bloco de código.</p>
+           <h3>2.Laço while</h3>
+            <p>O laço while é usado quando se deseja repetir um bloco de código enquanto uma condição específica for verdadeira. Ele é ideal quando o número de iterações não é conhecido antecipadamente.</p>
+            <h3>3. Laço do...while</h3>
+            <p>O laço do...while é semelhante ao while, mas garante que o bloco de código seja executado pelo menos uma vez, pois a condição é avaliada após a execução do bloco.</p>
+            <h3>4. Laço for...of</h3>
+            <p>Introduzido no ECMAScript 6 (ES6), o laço for...of é usado para iterar sobre valores de objetos iteráveis (como arrays, strings, Map, Set, etc.).</p>
+            <h3>5. Laço for...in</h3>
+            <p>O laço for...in é usado para iterar sobre as propriedades enumeráveis de um objeto. Ele é mais adequado para objetos, não para arrays.</p>
+            <h3>Ou seja:</h3>
+            <p>Use for quando souber o número exato de iterações.
+                Use while quando a condição de término depende de algo que pode não ser conhecido antecipadamente.
+                Use do...while quando precisar garantir que o bloco de código seja executado pelo menos uma vez.
+                Use for...of para iterar sobre elementos de coleções iteráveis.
+                Use for...in para iterar sobre propriedades de objetos.</p>
+        </section>
+    </article>
+</body>
+<script>
+   var c = 1 
+   while (c <= 10) {
+    document.write (' passo' + c)
+    c++
+}
+</script>
+<br>
+<script>
+    for( var c = 1; c <=4;c++ ){
+        document.write(c)
+    }
+</script>
+</html>
